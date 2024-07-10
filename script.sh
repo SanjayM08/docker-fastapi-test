@@ -9,13 +9,13 @@ lcear
 ls
 clear
 ls
-apt install docker.io
+apt install docker.io -y
 apt install python3
 pip install fastapi
-apt install python3-pip
-pip install fastapi
+apt install python3-pip -y
+pip install fastapi 
 virtualenv venv
-apt install python3-virtualenv
+apt install python3-virtualenv -y
 virtualenv venv
 ls
 clear
@@ -40,7 +40,6 @@ cd ..
 rm -rf venv/
 ls
 clear
-python3 -m venv myenv
 apt install python3.12-venv
 python3 -m venv myenv
 ls
@@ -67,7 +66,7 @@ ls
 uvicorn main.py:app --reload --host 0.0.0.0
 clear
 ls
-apt install docker-compose
+apt install docker-compose -y
 docker-compose --build .
 docker-compose --build
 docker-compose . --build
